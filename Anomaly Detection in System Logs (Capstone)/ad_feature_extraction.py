@@ -490,10 +490,10 @@ def redo_clusters():
 if __name__ == '__main__':
     random.seed(random_state)
 
-    #backup_output()
-    #process_raw_files(split_test_train=False) # for unsupervised training
-    #process_raw_files(split_test_train=True) # for supervised training
-    #get_params_within_cluster()
+    backup_output()
+    process_raw_files(split_test_train=False) # for unsupervised training
+    process_raw_files(split_test_train=True) # for supervised training
+    get_params_within_cluster()
     redo_clusters()
     apply_sliding_window()
 
